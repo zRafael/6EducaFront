@@ -1,0 +1,79 @@
+body {
+  background: #2a2e32;
+}
+
+.fs {
+  font-size: 20px;
+}
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+  color: rgb(255, 255, 255)
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.form-control {
+  background: #dce1e7;
+  border-color: #545454;
+}
+
+.form-control:focus {
+  background: #212529;
+}
+
+footer {
+  background: #ffc44e;
+}
+
+ul.social-network {
+  list-style: none;
+  margin-left: -130px;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0;
+
+
+
+}
+
+.fa {
+  font-size: 20pt;
+  color: azure;
+  padding: 5px;
+
+}
+
+.fa-github:hover {
+  color: rgb(250, 248, 248);
+}
+
+.fa-linkedin-square:hover {
+  color: rgb(30, 110, 231);
+}
+
+.fa-instagram:hover {
+  color: #c13584
+}
+
+
+
+/* ==========================================
+    CUSTOM UTILS CLASSES
+  ========================================== */
+body,
+html {
+  height: 100%;
+}
