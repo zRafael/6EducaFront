@@ -12,7 +12,7 @@ import { environment } from 'src/environments/environment.prod';
 export class TemaDeleteComponent implements OnInit {
 
   tema: Tema = new Tema()
-  idTema: number 
+  idTema: number
 
   constructor(
     private temaService: TemaService,
@@ -36,7 +36,7 @@ export class TemaDeleteComponent implements OnInit {
   }
 
   apagar() {
-    this.temaService.deleteTema(this.idTema).subscribe(() => {
+    this.temaService.deleteTema(this.idTema).subscribe((resp: Tema) => {
       alert('Tema apagado com sucesso!')
       this.router.navigate(['/tema'])
     })

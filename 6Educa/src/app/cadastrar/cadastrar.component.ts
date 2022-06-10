@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../service/auth.service';
 import { Router } from '@angular/router';
 import { User } from '../model/User';
-import { AuthService } from '../service/auth.service';
+import { UserLogin } from '../model/UserLogin';
 
 @Component({
   selector: 'app-cadastrar',
@@ -10,9 +11,10 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  user: User = new User
-  confirmarSenha: string
-  tipoUsuario: string
+  user: User = new User;
+  userLogin: UserLogin = new UserLogin;
+  confirmarSenha: string;
+  tipoUsuario: string;
 
   constructor(
     private authService: AuthService,
@@ -20,27 +22,34 @@ export class CadastrarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    window.scroll(0,0)
+    window.scroll(0, 0);
   }
 
   confirmaSenha(event: any) {
-    this.confirmarSenha = event.target.value
+    this.confirmarSenha = event.target.value;
+    //criando metodo para confirmar senha e quando colocar no formulario vai comparar senha
   }
 
   tipoUser(event: any) {
-    this.tipoUsuario = event.target.value
+    this.tipoUsuario = event.target.value;
+    //aqui guarda o tipo de usuario
   }
 
   cadastrar() {
-    this.user.tipo = this.tipoUsuario
-    if(this.user.senha != this.confirmarSenha) {
-      alert ('As senhas estão diferentes')
-    } else {
-      this.authService.cadastrar(this.user).subscribe((resp: User) => {
-        this.user = resp
+    this.user.type = this.tipoUsuario;
+
+
+    //operador ternario
+    // ex:
+    // condição ? verdade : falso
+    this.user.senha != this.confirmarSenha ? alert('As senhas estão INCORRETAS!') : this.authService
+      .cadastrar(this.user)
+      .subscribe((resp: User) => {
+        this.user = resp;
         this.router.navigate(['/entrar'])
-        alert ('Usuário cadastrado com sucesso')
+        alert('Usuario cadastrado com sucesso!')
       })
-    }
+
+
   }
 }
