@@ -5,3 +5,22 @@
 a {
   cursor: pointer;
 }
+
+.navbar {
+  background-image: url('https://i.imgur.com/6JUmVxE.png');
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 2px solid #FFFF;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}

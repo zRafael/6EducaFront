@@ -1,9 +1,21 @@
-#img-bg {
-  background-image: url('https://i.imgur.com/w3d95jN.jpg');
-
-  min-height: 937px;
-
+img {
+  margin-left: 150pt;
+  width: 438px;
+  height: 635px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
+}
+
+.mt-10 {
+  padding-top: 85pt;
+  padding-bottom: 87pt;
+}
+
+.bg-color {
+  background-color: #0a2f61;
+}
+
+.text-color {
+  color: #FFC04E;
 }
