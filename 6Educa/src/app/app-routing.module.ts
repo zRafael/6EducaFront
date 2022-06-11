@@ -5,6 +5,7 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
@@ -20,7 +21,9 @@ const routes: Routes = [
 
   { path: 'tema-edit/:id', component: TemaEditComponent },
 
-  { path: 'tema-delete/:id', component: TemaDeleteComponent }
+  { path: 'tema-delete/:id', component: TemaDeleteComponent },
+
+  { path: 'sobreNos', component: SobreNosComponent }
 ];
 
 @NgModule({

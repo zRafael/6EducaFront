@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { TemaComponent } from './tema/tema.component';
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
     HomeComponent,
     TemaComponent,
     TemaEditComponent,
-    TemaDeleteComponent
+    TemaDeleteComponent,
+    SobreNosComponent
     
   ],
   imports: [

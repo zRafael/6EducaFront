@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Exo+2:wght@100&family=Indie+Flower&family=Nanum+Myeongjo&display=swap');
+
+h1{
+    color: #24292e;
+    font-family:'Indie Flower', cursive;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 3.0rem;
+    line-height: 1.25;
+    font-weight: 800;
+    margin-left: 3rem;
+    text-align: center;
+    border-radius: 6rem;
+    transform: translateX(-20%) translateY(-20%);
+
+}
+
+.teste{
+    background-image: url('https://i.imgur.com/eVTbCZ1.png');
+    height: 50%;
+    border-radius: 20%;
+    background-repeat: no-repeat;
+}
+
+.loader{
+    height: 60px;
+    transform: translateY(-10px) translateX(-10px);
+}
+
+.loader span{
+    color: #FF914D;
+    font-family: 'Indie Flower', cursive;
+    font-size: 70pt;
+    display: inline-block;
+    transition: all 5s;
+    animation: animate 2s infinite;
+    text-align: center;
+
+}
+
+.loader span:nth-child(1){
+    animation-delay: .1s;
+}
+
+.loader span:nth-child(2){
+    animation-delay: .2s;
+}
+
+.loader span:nth-child(3){
+    animation-delay: .3s;
+}
+
+.loader span:nth-child(4){
+    animation-delay: .4s;
+}
+
+.loader span:nth-child(5){
+    animation-delay: .5s;
+}
+
+.loader span:nth-child(6){
+    animation-delay: .6s;
+}
+
+.loader span:nth-child(7){
+    animation-delay: .7s;
+}
+
+@keyframes animate{
+    0%{
+        color:#004AAD;
+        transform: translateY(0);
+        margin-left: 0;
+    }
+
+    25%{
+        color:#FF914D;
+        transform: translateY(-15px);
+        margin-left: 10px;
+    }
+    
+    100%{
+        color:#FDC44A;
+        transform: translateY(0);
+        margin-left: 0;
+    }
+}
+
+h2{
+    color: #24292e;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 3.0rem;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-left: 3rem;
+    margin-top: 100px;
+}
+
+.font{
+    color: black;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-size: 30pt;
+
+}
+.paragrafo1{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #24292e;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 15pt;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-left: 3rem;
+           
+}
+
+
+.imagem1{
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+    height: 10cm;
+    height: 10cm;
+    margin-left: 4cm;
+}
+
+.imagem2{
+    border: 0;
+    height: 10cm;
+    height: 8cm;
+    margin-top:3cm;
+    margin-left: 4cm;
+}
+
+.imagem3{
+    border: 0;
+    height: 10cm;
+    height: 8cm;
+    margin-top:3cm;
+    margin-left: 4cm;
+}
+
+.missao{
+    margin-top: 4cm;
+    text-align: center;
+  
+}
+
+.teste2{
+    background-image: url('https://i.imgur.com/r4RfGHV.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-right: 50px;
+    border-radius: 100px;
+    border-bottom-right-radius:20% ;
+    
+}
+
+.teste3{
+    background-image: url('https://i.imgur.com/TTEoOWZ.png');
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-left: 50px;
+    border-radius: 100px;
+    
+
+}
+
+.gradient{
+    background-image: linear-gradient(to right, #004AAD, #FF914D, #FDC44A);
+    border-radius: 6rem;
+}
+
+.visao, .paragrafo3{
+    margin-top:80px;
+}
+
+.valores{
+    margin-top: 0;
+}
+
+.tituloDev{
+    color: #24292e;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 3.0rem;
+    line-height: 1.25;
+    font-weight: 700;
+
+}
+.card-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+section::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #FF914D;
+	clip-path: circle(30% at right 70%);
+    border-radius: 20px;
+}
+
+section::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:#004AAD;
+	clip-path: circle(20% at 10% 10%);
+    border-radius: 20px;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+    	
+}
+
+.container .card {
+	position: relative;
+	width: 200px;
+	height: 300px;
+	background: rgba(255, 255, 255, 0.05);
+	margin: 10px;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(10px);
+}
+
+.container .card .content {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+.container .card:hover .content {
+	transform: translateY(-50px);
+}
+
+.container .card .content .imgBx {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+}
+
+.container .card .content .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container .card .content .contentBx h3 {
+	color: rgb(10, 10, 10);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0 10px;
+	line-height: 1.1em;
+}
+
+.container .card .content .contentBx h3 span {
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .sci {
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+    margin-right: 40px;
+}
+
+.container .card .sci li {
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.container .card:hover .sci li {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .sci li a {
+	color: rgb(10, 10, 10);
+	font-size: 15px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
