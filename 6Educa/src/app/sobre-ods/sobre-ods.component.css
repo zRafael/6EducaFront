@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Exo+2:wght@100&family=Indie+Flower&family=Nanum+Myeongjo&display=swap');
+
+/* INÍCIO DAS CONFIGURAÇÕES DA PRIMEIRA PARTE ONDE FICA ESCRITO "SOBRE A ODS"*/
+.teste {
+  background-color: #6696c7c4;
+}
+
+.imagem1 {
+  border: 10;
+  vertical-align: middle;
+  display: inline-block;
+  height: 8cm;
+  height: 8cm;
+  margin-left: 6cm;
+}
+
+.loader {
+  height: 60px;
+  transform: translateY(-10px) translateX(-10px);
+}
+
+.loader span {
+  color: #FF914D;
+  font-family: 'Indie Flower', cursive;
+  font-size: 70pt;
+  display: inline-block;
+  transition: all 3s;
+  animation: animate 2s infinite;
+  text-align: center;
+
+}
+
+.loader span:nth-child(1) {
+  animation-delay: .1s;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: .2s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: .3s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: .4s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: .5s;
+}
+
+.loader span:nth-child(6) {
+  animation-delay: .6s;
+}
+
+.loader span:nth-child(7) {
+  animation-delay: .7s;
+}
+
+@keyframes animate {
+  0% {
+    color: #004AAD;
+    transform: translateY(0);
+    margin-left: 0;
+  }
+
+  25% {
+    color: #FF914D;
+    transform: translateY(-15px);
+    margin-left: 10px;
+  }
+
+  100% {
+    color: #FDC44A;
+    transform: translateY(0);
+    margin-left: 0;
+  }
+}
+
+h2 {
+  color: #24292e;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 3.0rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin-left: 3rem;
+  margin-top: 70px;
+}
+
+/*FIM DAS CONFIGURAÇÕES DA PRIMEIRA PARTE ONDE FICA ESCRITO "SOBRE A ODS" */
+
+.font {
+  /*CONFIGURAÇÕES DOS TÍTULOS PEQUENOS*/
+  color: black;
+  font-family: 'Exo 2', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25pt;
+  margin-top: 1cm;
+  margin-left: 2cm;
+}
+
+.paragrafo {
+  /*CONFIGURAÇÕES DOS PARÁGRAFOS*/
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #24292e;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 15pt;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+
+}
+
+.imagem2 {
+  /*CONFIGURAÇÕES DA IMAGEM DO "O QUE SÃO AS ODS" */
+  border: 0;
+  height: 10cm;
+  height: 10cm;
+  margin-top: 0cm;
+  margin-left: 4cm;
+}
+
+.imagem3 {
+  /*CONFIGURAÇÕES DA IMAGEM DO "NOSSA INSPIRAÇÃO" */
+  border: 0;
+  height: 9cm;
+  height: 9cm;
+  margin-top: 0cm;
+  margin-left: 5cm;
+}
+
+.bg-insp {
+  /*CONFIGURAÇÕES DO BG DO "NOSSA INSPIRAÇÃO" */
+  background-color: #f9711784;
+}

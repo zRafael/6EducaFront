@@ -27,4 +27,12 @@ export class MenuComponent implements OnInit {
     environment.id = 0
   }
 
+  sobreNos() {
+    this.router.navigate(['/sobre-nos'])
+  }
+
+  sobreODS() {
+    this.router.navigate(['/sobre-ods'])
+  }
+
 }
