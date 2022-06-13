@@ -6,6 +6,10 @@ body {
   font-size: 20px;
 }
 
+.fs-15 {
+  font-size: 15px;
+}
+
 .text-small {
   font-size: 0.9rem;
 }
@@ -57,7 +61,7 @@ ul.social-network li {
 }
 
 .fa-github:hover {
-  color: rgb(250, 248, 248);
+  color: white;
 }
 
 .fa-linkedin-square:hover {
