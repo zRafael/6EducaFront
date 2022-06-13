@@ -1,0 +1,31 @@
+.amarelo {
+    background-color: #FDC15C;
+}
+
+.font {
+    font-family: Averia,sans-serif;
+}
+
+.fundo {
+    background-color: #FCF3E2;
+}
+
+.azul {
+    background-color: #1757AA;
+}
+
+.img-card {
+    width: 100px;
+}
+
+.tamanho {
+    height: 500px;
+}
+
+.navbar1 {
+    background-image: url('https://i.imgur.com/6JUmVxE.png');
+}
+
+.btn-tamanho {
+    width: 100px;
+}

@@ -18,6 +18,8 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
     PostagemEditComponent,
     PostagemDeleteComponent,
     SobreNosComponent,
-    SobreOdsComponent
+    SobreOdsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
