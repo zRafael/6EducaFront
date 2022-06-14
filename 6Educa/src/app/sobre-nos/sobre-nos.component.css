@@ -252,6 +252,7 @@ section::after {
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
+  
 }
 
 .container .card .content {

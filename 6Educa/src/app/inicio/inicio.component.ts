@@ -26,6 +26,9 @@ export class InicioComponent implements OnInit {
   user: User = new User()
   idUser = environment.id
 
+  key = 'data'
+  reverse = true
+  
   constructor(
     private router: Router,
     private postagemService: PostagemService,
@@ -36,6 +39,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    window.scroll(0,0)
 
     if (environment.token == '') {
       this.router.navigate(['/entrar'])

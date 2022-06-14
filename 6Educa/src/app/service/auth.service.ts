@@ -15,12 +15,21 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
+  token = {
+    headers: new HttpHeaders().set('Authorization', environment.token)
+  }
+
   cadastrar(user: User): Observable<User> {
     return this.http.post<User>('https://projetoseiseduca.herokuapp.com/usuarios/cadastrar', user)
   }
 
   entrar(userLgin: UserLogin): Observable<UserLogin> {
     return this.http.post<UserLogin>('https://projetoseiseduca.herokuapp.com/usuarios/logar', userLgin)
+  }
+
+  editar(user: User): Observable<User>{
+    console.log(environment.token)
+    return this.http.put<User>('https://projetoseiseduca.herokuapp.com/usuarios/atualizar', user, this.token)
   }
 
   getByIdUser(id: number): Observable<User> {

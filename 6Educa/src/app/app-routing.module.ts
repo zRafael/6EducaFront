@@ -11,6 +11,7 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
 import { HomeComponent } from './home/home.component';
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -30,7 +31,8 @@ const routes: Routes = [
   { path: 'sobre-nos', component: SobreNosComponent },
   { path: 'sobre-ods', component: SobreOdsComponent },
 
-  { path: 'home', component: HomeComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'user-edit/:id', component: UserEditComponent }
 ];
 
 @NgModule({
