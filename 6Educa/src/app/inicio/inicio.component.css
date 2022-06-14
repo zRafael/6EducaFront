@@ -1,15 +1,64 @@
 body{
-    background-color: #c9c3cc;
+    background-color: #004bad8e;
 }
 
 article,.menuperfil,img{
     background: rgba(255, 255, 255, 0.281);
-box-shadow: 0 8px 32px 0 rgba(23, 0, 43, 0.37);
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
-border-radius: 20px;
-border: 1px solid rgba(62, 13, 13, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(23, 0, 43, 0.37);
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 20px;
+    border: 1px solid rgba(62, 13, 13, 0.18);
 }
+
+.card-body{
+    background-color: #004bad1a;
+}
+
+.nav-link {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 10pt;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 8px 8px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .nav-link:hover, .nav-link:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .third {
+    border-color: #004badd0;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #004badd0 inset, 0 0 0 0 #004badd0;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+
+  .third:hover {
+    box-shadow: 0 0 10px 0 #004badd0 inset, 0 0 10px 4px #004badd0;
+  }
 
 .menuperfil{
     height: 37em;
@@ -30,7 +79,6 @@ border: 1px solid rgba(62, 13, 13, 0.18);
     height: 10em;
     border-radius: 20em;
 }
-
 
 .imgpublicar{
     width:3em;

@@ -8,5 +8,5 @@ export class Postagem {
   public usuario: User;
   public tema: Tema;
   public data: Date;
-  public foto: string
+  public foto: string;
 }
