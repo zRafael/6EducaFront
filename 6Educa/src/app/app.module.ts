@@ -19,6 +19,8 @@ import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delet
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
 import { HomeComponent } from './home/home.component';
+import { AlertasComponent } from './alertas/alertas.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 @NgModule({
@@ -36,13 +38,15 @@ import { HomeComponent } from './home/home.component';
     PostagemDeleteComponent,
     SobreNosComponent,
     SobreOdsComponent,
-    HomeComponent
+    HomeComponent,
+    AlertasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ModalModule.forRoot()
   ],
   providers: [{
     provide: LocationStrategy,
