@@ -24,6 +24,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
 import { OrderModule } from 'ngx-order-pipe';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { OrderModule } from 'ngx-order-pipe';
     SobreOdsComponent,
     HomeComponent,
     AlertasComponent,
-    UserEditComponent
+    UserEditComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
 import { HomeComponent } from './home/home.component';
 import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { NavComponent } from './nav/nav.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -32,6 +33,8 @@ const routes: Routes = [
   { path: 'sobre-ods', component: SobreOdsComponent },
 
   { path: 'home', component: HomeComponent },
+  { path: 'nav', component: NavComponent},
+
   { path: 'user-edit/:id', component: UserEditComponent }
 ];
 

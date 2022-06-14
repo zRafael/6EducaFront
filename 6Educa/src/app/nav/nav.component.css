@@ -6,10 +6,6 @@
     background-color: #FDC15C;
 }
 
-.azul {
-    background-color: #1757AA;
-}
-
 .font-white {
     font-family: 'Exo 2', sans-serif;
     font-family: 'Indie Flower', cursive;
@@ -48,18 +44,22 @@
     font-size: 12pt;
 }
 
-.img-card {
+.navbar1 {
+    background-image: url('https://i.imgur.com/6JUmVxE.png');
+}
+
+.btn-tamanho {
     width: 100px;
 }
 
-.inner {
-    overflow: hidden;
+.tamanho {
+    height: 500px;
 }
 
-.inner img {
-    transition: all 1.5s ease;
+.fundo {
+    background-color: #FCF3E2;
 }
 
-.inner:hover img {
-    transform: scale(1.5);
+.azul {
+    background-color: #1757AA;
 }
