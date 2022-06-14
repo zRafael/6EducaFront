@@ -18,6 +18,8 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
+import { UserEditComponent } from './edit/user-edit/user-edit.component';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -33,13 +35,15 @@ import { SobreOdsComponent } from './sobre-ods/sobre-ods.component';
     PostagemEditComponent,
     PostagemDeleteComponent,
     SobreNosComponent,
-    SobreOdsComponent
+    SobreOdsComponent,
+    UserEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    OrderModule
   ],
   providers: [{
     provide: LocationStrategy,

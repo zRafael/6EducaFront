@@ -37,8 +37,6 @@ export class CadastrarComponent implements OnInit {
 
   cadastrar() {
     this.user.type = this.tipoUsuario;
-
-
     //operador ternario
     // ex:
     // condição ? verdade : falso
