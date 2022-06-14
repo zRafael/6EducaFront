@@ -33,18 +33,24 @@
 
         <!-- POSTAGENS -->
 
-        <article class="container-fluid mt-5" id="postagens">
+        <article class="container-fluid mt-5 mb-5" id="postagens">
 
           <!-- menu -->
           <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#TodasPostagens" role="tab"
+              <a class="nav-link third  active" id="nav-home-tab" data-toggle="tab" href="#TodasPostagens" role="tab"
                 aria-controls="nav-TodasPostagens" aria-selected="true">Todas Postagens</a>
             </li>
             <li class="nav-item">
-              <a (click)='findByIdUser()' class="nav-link" id="MinhasPostagens-tab" data-toggle="tab"
+              <a (click)='findByIdUser()' class="nav-link third" id="MinhasPostagens-tab" data-toggle="tab"
                 href="#MinhasPostagens" role="tab" aria-controls="MinhasPostagens" aria-selected="false">Minhas
                 Postagens</a>
+            </li>
+
+            <li>
+              <a class="nav-link third" id="nav-postagemTema-tab" 
+              data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" 
+              aria-selected="false">Postagens por tema</a>
             </li>
           </ul>
           <!-- fim menu -->

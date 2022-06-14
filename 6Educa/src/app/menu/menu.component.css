@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Bebas+Neue&family=Exo+2:wght@100&family=Indie+Flower&family=Josefin+Sans&display=swap');
+
 .fs-16 {
   font-size: 16pt;
+  font-family: 'Assistant', sans-serif;
 }
 
 a {
