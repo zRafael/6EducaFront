@@ -1,25 +1,28 @@
-body{
+body {
     background-color: #004bad8e;
 }
 
-article,.menuperfil,img{
+article,
+.menuperfil,
+img {
     background: rgba(255, 255, 255, 0.281);
     box-shadow: 0 8px 32px 0 rgba(23, 0, 43, 0.37);
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
-    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 15px;
     border: 1px solid rgba(62, 13, 13, 0.18);
+
 }
 
-.card-body{
+.card-body {
     background-color: #004bad1a;
 }
 
 .nav-link {
     box-sizing: border-box;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-color: transparent;
     border: 2px solid #e74c3c;
     border-radius: 0.6em;
@@ -30,8 +33,8 @@ article,.menuperfil,img{
     display: -ms-flexbox;
     display: flex;
     -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
     font-size: 10pt;
     font-weight: 400;
     line-height: 1;
@@ -42,90 +45,94 @@ article,.menuperfil,img{
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-  }
-  .nav-link:hover, .nav-link:focus {
+}
+
+.nav-link:hover,
+.nav-link:focus {
     color: #fff;
     outline: 0;
-  }
-  
-  .third {
+}
+
+.third {
     border-color: #004badd0;
     color: #fff;
     box-shadow: 0 0 40px 40px #004badd0 inset, 0 0 0 0 #004badd0;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
-  }
-
-  .third:hover {
-    box-shadow: 0 0 10px 0 #004badd0 inset, 0 0 10px 4px #004badd0;
-  }
-
-.menuperfil{
-    height: 37em;
 }
 
-.menuperfil2{
+.third:hover {
+    box-shadow: 0 0 10px 0 #004badd0 inset, 0 0 10px 4px #004badd0;
+}
+
+.menuperfil {
+    height: 20em;
+}
+
+.menuperfil2 {
     background: rgba(255, 255, 255, 0.281);
     box-shadow: 0 8px 32px 0 rgba(23, 0, 43, 0.37);
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     border-radius: 20px;
     border: 1px solid rgba(62, 13, 13, 0.18);
 }
 
 
-.imgperfil{
+.imgperfil {
     width: 10em;
     height: 10em;
-    border-radius: 20em;
+    border-radius: 30em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-.imgpublicar{
-    width:3em;
-    height:3em;
+.imgpublicar {
+    width: 3em;
+    height: 3em;
     border-radius: 10em;
 }
 
 
-.imgpost{
+.imgpost {
     width: 2em;
     height: 1.8em;
     border-radius: 8em;
 }
 
-.textarea{
+.textarea {
     resize: none;
     width: 100%;
     border: none;
 
 }
 
-.fs-20{
+.fs-20 {
     font-size: 20px;
 }
 
 
-.inputPostagem{
-    background: rgba( 255, 255, 255, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
-height: 3em;
-width: 70%;
-border: 1px solid rgba(62, 13, 13, 0.18);
+.inputPostagem {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    height: 3em;
+    width: 70%;
+    border: 1px solid rgba(62, 13, 13, 0.18);
 }
 
-.pesquisaPostagem{
-    background: rgba( 255, 255, 255, 0.2 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
-height: 3em;
-border: 1px solid rgba(62, 13, 13, 0.18);
+.pesquisaPostagem {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+    height: 3em;
+    border: 1px solid rgba(62, 13, 13, 0.18);
 }
 
-.fa-heart{
+.fa-heart {
     color: rgb(61, 3, 66);
 }

@@ -27,7 +27,7 @@ export class AuthService {
     return this.http.post<UserLogin>('https://projetoseiseduca.herokuapp.com/usuarios/logar', userLgin)
   }
 
-  editar(user: User): Observable<User>{
+  editar(user: User): Observable<User> {
     console.log(environment.token)
     return this.http.put<User>('https://projetoseiseduca.herokuapp.com/usuarios/atualizar', user, this.token)
   }
@@ -38,11 +38,17 @@ export class AuthService {
 
   logado() {
     let ok: boolean = false;
-
     if (environment.token != '') {
       ok = true
     }
+    return ok
+  }
 
+  deslogado() {
+    let ok: boolean = false;
+    if (environment.token == '') {
+      ok = true
+    }
     return ok
   }
 

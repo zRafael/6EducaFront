@@ -3,7 +3,7 @@
     <section class="row">
 
 
-      <section class="menuperfil col-md-3 mt-5 mr-3">
+      <section class="menuperfil col-md-2 mt-5 ml-3 mr-5">
         <!-- PERFIL -->
 
         <div class="m-2">
@@ -13,7 +13,7 @@
         </div>
 
         <div class="mt-2">
-          <a class="fs-20" [routerLink]="['/perfil-edit',idUser]"><i class="fa fa-pencil-square-o " aria-hidden="true">
+          <a class="fs-20" [routerLink]="['/user-edit',idUser]"><i class="fa fa-pencil-square-o " aria-hidden="true">
               Editar Usuario</i></a>
         </div>
       </section>
@@ -48,9 +48,8 @@
             </li>
 
             <li>
-              <a class="nav-link third" id="nav-postagemTema-tab" 
-              data-toggle="tab" href="#postagemTema" role="tab" aria-controls="nav-postagemTema" 
-              aria-selected="false">Postagens por tema</a>
+              <a class="nav-link third" id="nav-postagemTema-tab" data-toggle="tab" href="#postagemTema" role="tab"
+                aria-controls="nav-postagemTema" aria-selected="false">Postagens por tema</a>
             </li>
           </ul>
           <!-- fim menu -->
@@ -86,9 +85,9 @@
                   <img src={{postagem.foto}} height="500px" onerror="this.style.display='none'" width="100%" alt=" ">
                   <p class="card-text text-right"><small class="text-muted">{{postagem.data | date: 'dd/MM/yyyy'}} às
                       {{postagem.data | date: 'HH:mm'}}</small></p>
-                <!-- titulo,postagem,img -->
+                  <!-- titulo,postagem,img -->
 
-                    <hr>             
+                  <hr>
 
                 </div>
               </div>
@@ -171,7 +170,8 @@
               tema</a>
             <select name="tema" [(ngModel)]="idTema" (change)="findByIdTema()" class="form-control mt-2" id="">
 
-              <option *ngFor="let tema of listaTema | orderBy: key: reverse" value="{{tema.id}}">{{tema.descricao}}</option>
+              <option *ngFor="let tema of listaTema | orderBy: key: reverse" value="{{tema.id}}">{{tema.descricao}}
+              </option>
 
             </select>
 
