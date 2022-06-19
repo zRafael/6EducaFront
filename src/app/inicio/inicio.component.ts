@@ -18,11 +18,9 @@ export class InicioComponent implements OnInit {
   foto = environment.foto
   nome = environment.nome
 
-
   postagem: Postagem = new Postagem()
   listaPostagens: Postagem[]
   tituloPost: string
-
 
   listaTema: Tema[]
   idTema: number
@@ -33,7 +31,7 @@ export class InicioComponent implements OnInit {
 
   key = 'data'
   reverse = true
-  
+
   constructor(
     private router: Router,
     private postagemService: PostagemService,
@@ -44,7 +42,7 @@ export class InicioComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    window.scroll(0,0)
+    window.scroll(0, 0)
 
     if (environment.token == '') {
       this.router.navigate(['/entrar'])
@@ -92,15 +90,15 @@ export class InicioComponent implements OnInit {
     })
   }
 
-  findByTituloPostagem(){
-    if(this.tituloPost = ''){
+  findByTituloPostagem() {
+    if (this.tituloPost == '') {
       this.getAllPostagens()
-    }else{
-      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[])=>{
+    } else {
+
+      this.postagemService.getByTituloPostagem(this.tituloPost).subscribe((resp: Postagem[]) => {
         this.listaPostagens = resp
       })
     }
-    
   }
 
 }
