@@ -6,7 +6,7 @@ body {
   font-size: 20px;
 }
 
-.fs-15{
+.fs-15 {
   font-size: 15px;
 }
 
@@ -18,7 +18,7 @@ a {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s;
-  color: rgb(255, 255, 255)
+  color: black
 }
 
 a:hover,
@@ -55,7 +55,7 @@ ul.social-network li {
 
 .fa {
   font-size: 20pt;
-  color: azure;
+  color: black;
   padding: 5px;
 
 }
