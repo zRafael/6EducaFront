@@ -49,7 +49,7 @@
 
             <li class="nav-item">
               <a class="nav-link third active" id="PostagemTema-tab" data-toggle="tab" href="#PostagemTema" role="tab"
-                aria-controls="PostagemTema" aria-selected="true">Postagens por tema</a>
+                aria-controls="PostagemTema" aria-selected="false">Postagens por tema</a>
             </li>
           </ul>
           <!-- fim menu -->
@@ -122,46 +122,43 @@
 
             <!-- POSTAGENS TEMA -->
 
-            <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="PostagemTema" role="tabpanel"
+              aria-labelledby="nav-PostagemTema-tab">
 
-              <div class="tab-pane fade show active" id="PostagemTema" role="tabpanel"
-                aria-labelledby="PostagemTema-tab">
-
-                <div class="row mt-5 mb-5 d-flex justify-content-center">
-                  <div class="col-md-8">
-                    <div class="form-group">
-                      <label style="font-size:20px;" for="titulo">Procurar por Tema</label>
-                      <input type="text" class="mt-2 form-control pesquisaPostagem" id="titulo"
-                        placeholder="Pesquisar por tema" [(ngModel)]='nomeTema' (keyup)='findByNomeTema()'>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div *ngFor="let tema of listaTema | orderBy: key: reverse" class="mt-4 card">
-
-                  <!-- titulo,postagem,img -->
-                  <div class="card-body">
-                    <p class="text-left" style="font-size: 20px;"><img src={{postagem.usuario.foto}}
-                        class="imgpost mr-2" alt="" onerror="this.style.display='none'"> {{postagem.usuario.nome}}</p>
-
-                    <p class="card-title text-left">Tema: {{postagem.tema.descricao}}</p>
-                    <h3 class="card-title">{{postagem.titulo}}</h3>
-                    <p class="card-text ">{{postagem.texto}}</p>
-                    <img src={{postagem.foto}} height="500px" onerror="this.style.display='none'" width="100%" alt=" ">
-                    <p class="card-text text-right"><small class="text-muted">{{postagem.data | date: 'dd/MM/yyyy'}} às
-                        {{postagem.data | date: 'HH:mm'}}</small></p>
-                    <!-- titulo,postagem,img -->
-
-                    <hr>
-
+              <div class="row mt-5 mb-5 d-flex justify-content-center">
+                <div class="col-md-8">
+                  <div class="form-group">
+                    <label style="font-size:20px;" for="titulo">Procurar por Tema</label>
+                    <input type="text" class="mt-2 form-control pesquisaPostagem" id="titulo"
+                      placeholder="Pesquisar por tema" [(ngModel)]='nomeTema' (keyup)='findByNomeTema()'>
                   </div>
                 </div>
               </div>
 
-              <!-- FIM POSTAGENS TEMA-->
 
+              <div *ngFor="let postagem of listaPostagens | orderBy: key: reverse" class="mt-4 card">
+
+                <!-- titulo,postagem,img -->
+                <div class="card-body">
+                  <p class="text-left" style="font-size: 20px;"><img src={{postagem.usuario.foto}} class="imgpost mr-2"
+                      alt="" onerror="this.style.display='none'"> {{postagem.usuario.nome}}</p>
+
+                  <p class="card-title text-left">Tema: {{postagem.tema.descricao}}</p>
+                  <h3 class="card-title">{{postagem.titulo}}</h3>
+                  <p class="card-text ">{{postagem.texto}}</p>
+                  <img src={{postagem.foto}} height="500px" onerror="this.style.display='none'" width="100%" alt=" ">
+                  <p class="card-text text-right"><small class="text-muted">{{postagem.data | date: 'dd/MM/yyyy'}} às
+                      {{postagem.data | date: 'HH:mm'}}</small></p>
+                  <!-- titulo,postagem,img -->
+
+                  <hr>
+
+                </div>
+              </div>
             </div>
+
+            <!-- FIM POSTAGENS TEMA-->
+
           </div>
         </article>
         <!-- FIM POSTAGENS -->
